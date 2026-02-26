@@ -1,0 +1,26 @@
+[tool.poetry]
+name = "orgs-project"
+version = "0.1.0"
+description = ""
+authors = ["Kirill-Lin <kirillfromhome@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+fastapi = "^0.133.0"
+uvicorn = "^0.41.0"
+sqlalchemy = "^2.0.47"
+psycopg2-binary = "^2.9.11"
+alembic = "^1.18.4"
+pydantic = "^2.12.5"
+python-dotenv = "^1.2.1"
+pydantic-settings = "^2.13.1"
+
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^9.0.2"
+httpx = "^0.28.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
